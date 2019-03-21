@@ -1,1 +1,13 @@
 //new readme
+
+
+To copy files to your pi
+rsync -avz -e ssh *.js pi@192.168.1.52:/home/pi/rockets
+
+to connect to your pi:
+Login to your router to determine the ip address of the pi
+
+ssh to the pi
+ssh -l pi 192.168.1.52
+
+pw 10thtop
