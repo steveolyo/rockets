@@ -38,7 +38,7 @@ async function getValues() {
     Pressure: pressure,
     Temperature: temperature
   } = await bmp280.readSensors();
-  const altitude = 3.28084 * getAltitude(pressure, temperature);
+  const altitude = getAltitude(pressure, temperature);
   return { altitude, pressure, temperature };
 }
 
